@@ -3,8 +3,8 @@ LABEL maintainer="Mohammed Alzahrani"
 
 COPY . /techtrends
 WORKDIR /techtrends
-RUN pip install -r ./requirements.txt
-RUN python ./init_db.py
+RUN pip install -r requirements.txt
+RUN python init_db.py
 
 EXPOSE 3111
 
