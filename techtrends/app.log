@@ -1,0 +1,1128 @@
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+INFO:app:Status request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 22:31:56] "GET /healthz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 22:32:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:app:Hi
+INFO:app:<sqlite3.Row object at 0x7fd6dd12ee70>
+ERROR:app:Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 79, in metrics
+    response=json.dumps({"status":"success","code":0,"data":{"db_connection_count":1,"post_count":int(total_post)}}),
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'sqlite3.Row'
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 22:32:13] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 22:32:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+INFO:app:<sqlite3.Row object at 0x7f55aa4d8d90>
+ERROR:app:Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 79, in metrics
+    response=json.dumps({"status":"success","code":0,"data":{"db_connection_count":1,"post_count":int(total_post)}}),
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'sqlite3.Row'
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 22:33:59] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 22:33:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+INFO:app:<sqlite3.Cursor object at 0x7f6889947730>
+INFO:app:<sqlite3.Cursor object at 0x7f6889947730>
+ERROR:app:Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 79, in metrics
+    response=json.dumps({"status":"success","code":0,"data":{"db_connection_count":1,"post_count":int(total_post)}}),
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'sqlite3.Cursor'
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 22:34:51] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 22:34:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+INFO:app:<sqlite3.Row object at 0x7f72f88ebd90>
+INFO:app:None
+ERROR:app:Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 80, in metrics
+    response=json.dumps({"status":"success","code":0,"data":{"db_connection_count":1,"post_count":int(total_post)}}),
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 22:37:00] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 22:37:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+INFO:app:<sqlite3.Row object at 0x7fa15a0c2d90>
+INFO:app:None
+ERROR:app:Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 80, in metrics
+    response=json.dumps({"status":"success","code":0,"data":{"db_connection_count":1,"post_count":int(total_post)}}),
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 22:37:50] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 22:37:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+INFO:app:None
+ERROR:app:Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 80, in metrics
+    response=json.dumps({"status":"success","code":0,"data":{"db_connection_count":1,"post_count":int(total_post)}}),
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 22:39:07] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+ERROR:app:Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 78, in metrics
+    response=json.dumps({"status":"success","code":0,"data":{"db_connection_count":1,"post_count":int(total_post)}}),
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 22:39:46] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+ERROR:app:Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 78, in metrics
+    response=json.dumps({"status":"success","code":0,"data":{"db_connection_count":1,"post_count":int(total_post)}}),
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 22:46:14] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+ERROR:app:Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 76, in metrics
+    total_post = get_total_posts()
+  File "app.py", line 25, in get_total_posts
+    print(post.fetchone())
+AttributeError: 'sqlite3.Row' object has no attribute 'fetchone'
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 22:47:04] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 76, in metrics
+    total_post = get_total_posts()
+  File "app.py", line 25, in get_total_posts
+    print(post.fetchone())
+AttributeError: 'sqlite3.Row' object has no attribute 'fetchone'
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 22:47:13] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 76, in metrics
+    total_post = get_total_posts()
+  File "app.py", line 25, in get_total_posts
+    print(post.fetchone())
+AttributeError: 'sqlite3.Row' object has no attribute 'fetchone'
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 22:47:17] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 76, in metrics
+    total_post = get_total_posts()
+  File "app.py", line 25, in get_total_posts
+    print(post.fetchone())
+AttributeError: 'sqlite3.Row' object has no attribute 'fetchone'
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 22:47:32] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+ERROR:app:Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 76, in metrics
+    total_post = get_total_posts()
+  File "app.py", line 25, in get_total_posts
+    print(post.fetchone())
+AttributeError: 'sqlite3.Row' object has no attribute 'fetchone'
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 22:48:08] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+ERROR:app:Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 78, in metrics
+    response=json.dumps({"status":"success","code":0,"data":{"db_connection_count":1,"post_count":int(total_post)}}),
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 22:48:54] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+ERROR:app:Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 78, in metrics
+    response=json.dumps({"status":"success","code":0,"data":{"db_connection_count":1,"post_count":int(total_post)}}),
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 22:50:27] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+ERROR:app:Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 76, in metrics
+    total_post = get_total_posts()
+  File "app.py", line 24, in get_total_posts
+    post = connection.execute('SELECT *) FROM posts').fetchall()
+sqlite3.OperationalError: near ")": syntax error
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 22:52:37] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 22:52:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+ERROR:app:Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 78, in metrics
+    response=json.dumps({"status":"success","code":0,"data":{"db_connection_count":1,"post_count":int(total_post)}}),
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 22:53:02] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+ERROR:app:Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 78, in metrics
+    response=json.dumps({"status":"success","code":0,"data":{"db_connection_count":1,"post_count":int(total_post)}}),
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 22:53:26] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:06:43] "GET /metrics HTTP/1.1" 200 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+ERROR:app:Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 76, in metrics
+    total_post = get_total_posts()
+  File "app.py", line 24, in get_total_posts
+    post = connection.execute('SELECT count * FROM posts').fetchall()
+sqlite3.OperationalError: near "FROM": syntax error
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:07:34] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:07:53] "GET /metrics HTTP/1.1" 200 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:09:48] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:09:54] "GET /metrics HTTP/1.1" 200 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+ERROR:app:Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 85, in metrics
+    total_post = get_total_posts()
+  File "app.py", line 30, in get_total_posts
+    db_count(1)
+  File "app.py", line 14, in db_count
+    counter = count + counter
+UnboundLocalError: local variable 'counter' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:17:20] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+ERROR:app:Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 83, in metrics
+    total_post = get_total_posts()
+  File "app.py", line 28, in get_total_posts
+    db_counter = db_counter + 1
+UnboundLocalError: local variable 'db_counter' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:20:12] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 83, in metrics
+    total_post = get_total_posts()
+  File "app.py", line 28, in get_total_posts
+    db_counter = db_counter + 1
+UnboundLocalError: local variable 'db_counter' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:20:13] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:22:01] "GET /metrics HTTP/1.1" 200 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+ERROR:app:Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 83, in metrics
+    total_post = get_total_posts()
+  File "app.py", line 28, in get_total_posts
+    db_counter = db_counter + 1
+UnboundLocalError: local variable 'db_counter' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:30:29] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:34:34] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:34:50] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:34:50] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:34:51] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:34:52] "GET /metrics HTTP/1.1" 200 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:39:53] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:39:54] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:39:55] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:39:55] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:39:56] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:39:56] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:39:56] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:40:08] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:40:08] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:40:12] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:40:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:40:14] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:40:16] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:40:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:40:20] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:40:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:40:20] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:40:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:40:20] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:40:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:40:21] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:40:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:40:21] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:40:23] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:40:23] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:40:23] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:40:45] "GET / HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:48] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:49] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:49] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:49] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:49] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:50] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:50] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:50] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:50] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:50] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:51] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:51] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:51] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:51] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:51] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:52] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:52] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:52] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:53] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:53] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:53] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:56] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:56] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:56] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:56] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:57] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:57] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:57] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:57] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:57] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:58] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:58] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:58] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:58] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:59] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:59] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:59] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:59] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:43:59] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:00] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:00] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:00] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:00] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:00] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:01] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:01] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:01] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:01] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:02] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:02] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:02] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:02] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:18] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:18] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:18] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:19] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:19] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:19] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:19] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:20] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:20] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:20] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:20] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:20] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:21] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:21] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:21] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:22] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:22] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:22] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:22] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:22] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:22] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:23] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:23] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:23] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:23] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:23] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:24] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:24] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:24] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:25] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:25] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:25] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:25] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:26] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:26] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:26] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:26] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:26] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:27] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:27] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:28] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:28] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:28] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:28] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:29] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:29] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:30] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:30] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:30] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:44:30] "GET /metrics HTTP/1.1" 200 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:46:15] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:46:16] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:46:16] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:46:17] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:46:18] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:46:19] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:46:19] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:46:20] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:46:21] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:46:22] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:46:22] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:46:23] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:46:23] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:46:23] "GET /metrics HTTP/1.1" 200 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:06] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:07] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:08] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:08] "GET /metrics HTTP/1.1" 200 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:45] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:46] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:46] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:47] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:47] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:48] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:48] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:48] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:49] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:49] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:49] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:49] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:50] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:50] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:50] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:50] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:51] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:51] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:51] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:51] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:52] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:52] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:52] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:52] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:52] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:53] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:53] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:53] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:54] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:54] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:54] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:54] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:54] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:55] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:55] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:55] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:56] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:56] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:56] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:56] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:56] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:57] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:57] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:57] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:58] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:58] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:58] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:58] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:58] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:58] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:59] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:59] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:59] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:47:59] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:00] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:00] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:00] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:00] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:01] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:01] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:02] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:02] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:02] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:02] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:02] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:03] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:03] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:03] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:03] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:03] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:04] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:04] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:04] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:04] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:04] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:05] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:05] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:05] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:05] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:06] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:06] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:06] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:06] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:06] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:07] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:07] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:07] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:07] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:08] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:08] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:08] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:09] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:09] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:09] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:09] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:10] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:10] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:10] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:10] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:11] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:11] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:11] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:11] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:12] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:12] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:13] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:13] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:13] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:13] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:14] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:14] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:14] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:14] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:48:15] "GET /metrics HTTP/1.1" 200 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:56:47] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:56:47] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:56:54] "[32mPOST /create HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:56:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:56:54] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:59:09] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:59:09] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:article is created {title}
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:59:19] "[32mPOST /create HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:59:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2023 23:59:19] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:01:58] "[32mPOST /create HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:01:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:01:58] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+INFO:app:article is created test4
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:03:28] "[32mPOST /create HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:03:28] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:03:28] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:35:14] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:35:14] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:35:18] "GET /2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:35:18] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:35:21] "GET /6 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:35:21] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:35:24] "GET /6 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:35:24] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:35:26] "GET /5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:35:26] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:35:29] "GET /4 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:35:29] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:35:32] "GET /3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:35:32] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:35:33] "GET /2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:35:34] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:35:37] "GET /10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:35:37] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:45:30] "GET /6 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:45:30] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:45:50] "GET /6 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:45:50] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+ERROR:app:Exception on /6 [GET]
+Traceback (most recent call last):
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1526, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1545, in finalize_request
+    response = self.make_response(rv)
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1693, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response tuple. The tuple must have the form (body, status, headers), (body, status), or (body, headers).
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:47:29] "[35m[1mGET /6 HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+INFO:app:Article  "<sqlite3.Row object at 0x7f49004bedb0>" retrieved!
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:49:29] "GET /6 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:49:29] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+INFO:app:Article  "('Kubernetes Certification',)" retrieved!
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:54:04] "GET /6 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:54:04] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:Article  "('Kubernetes Certification',)" retrieved!
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:54:05] "GET /6 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:54:05] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/think/.local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 63, in index
+    return render_template('index.html', posts=posts)
+  File "/home/think/.local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/home/think/.local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/home/think/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/think/.local/lib/python3.8/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/think/Cloud_Native_Application_Architecture-ND/Lessoon-1_Architecture_Consideration_for_Cloud_Native_Fundamentals/Project_TechTrends/project/techtrends/templates/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/think/Cloud_Native_Application_Architecture-ND/Lessoon-1_Architecture_Consideration_for_Cloud_Native_Fundamentals/Project_TechTrends/project/techtrends/templates/base.html", line 22, in top-level template code
+    {% block content %} {% endblock %}
+  File "/home/think/Cloud_Native_Application_Architecture-ND/Lessoon-1_Architecture_Consideration_for_Cloud_Native_Fundamentals/Project_TechTrends/project/techtrends/templates/index.html", line 6, in block 'content'
+    <a class="post" href="{{ url_for('post', post_id=post['id']) }}">
+  File "/home/think/.local/lib/python3.8/site-packages/flask/helpers.py", line 323, in url_for
+    rv = url_adapter.build(
+  File "/home/think/.local/lib/python3.8/site-packages/werkzeug/routing.py", line 2299, in build
+    rv = self._partial_build(endpoint, values, method, append_unknown)
+  File "/home/think/.local/lib/python3.8/site-packages/werkzeug/routing.py", line 2163, in _partial_build
+    rv = self._partial_build(
+  File "/home/think/.local/lib/python3.8/site-packages/werkzeug/routing.py", line 2176, in _partial_build
+    build_rv = rule.build(values, append_unknown)
+  File "/home/think/.local/lib/python3.8/site-packages/werkzeug/routing.py", line 1070, in build
+    return self._build_unknown(**values)
+  File "<werkzeug routing>", line 1, in <builder:'/<int:post_id>'>
+  File "/home/think/.local/lib/python3.8/site-packages/werkzeug/routing.py", line 1300, in to_url
+    value = str(self.num_convert(value))
+jinja2.exceptions.UndefinedError: 'tuple object' has no attribute 'id'
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:54:09] "[35m[1mGET / HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:56:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:56:37] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:Article  "('2020 CNCF Annual Report',)" retrieved!
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:56:42] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 00:56:42] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.107:3111/ (Press CTRL+C to quit)
+INFO:app:Page "about" retrieved!
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 01:00:34] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2023 01:00:34] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:Page "about" retrieved!
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2023 00:00:36] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2023 00:00:37] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -

@@ -1,0 +1,26 @@
+## Docker commands used to build the application 
+docker build -t techtrends .
+
+## Docker commands used to run the application
+docker run -d -p 7111:3111 techtrends
+
+## Docker commands used to get the application logs
+docker exec -it <container_id> bash
+tail -10 app.log
+
+docker exec -it c67e7873431f bash
+root@c67e7873431f:/techtrends# tail -10 app.log 
+INFO:werkzeug:172.17.0.1 - - [17/Mar/2023 21:41:12] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:app:article is created "test"
+INFO:werkzeug:172.17.0.1 - - [17/Mar/2023 21:41:18] "POST /create HTTP/1.1" 302 -
+INFO:werkzeug:172.17.0.1 - - [17/Mar/2023 21:41:18] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [17/Mar/2023 21:41:18] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [17/Mar/2023 21:41:18] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:app:Article "('2020 CNCF Annual Report',)" retrieved!
+INFO:werkzeug:172.17.0.1 - - [17/Mar/2023 21:41:20] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [17/Mar/2023 21:41:20] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [17/Mar/2023 21:41:20] "GET /favicon.ico HTTP/1.1" 404 -
+
+
+## Logs from the container running the TechTrends application
+docker logs <container_id>
