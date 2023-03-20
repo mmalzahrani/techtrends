@@ -112,7 +112,6 @@ def metrics():
 
      ## log line
     app.logger.info('Metrics request successfull')
-    app.logger.info('Test')
     return response
 
 
