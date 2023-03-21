@@ -8,12 +8,16 @@ db_counter = 0
 # Function to get a database connection.
 # This function connects to database with the name `database.db`
 def get_db_connection():
+    global db_counter
+    db_counter = db_counter + 1
     connection = sqlite3.connect('database.db')
     connection.row_factory = sqlite3.Row
     return connection
 
 # This function connects to database with the name `database.db`
 def get_db_connection_cur():
+    global db_counter
+    db_counter = db_counter + 1
     connection = sqlite3.connect('database.db')
     return connection
 
@@ -23,9 +27,7 @@ def get_post(post_id):
     connection = get_db_connection()
     post = connection.execute('SELECT * FROM posts WHERE id = ?',
                         (post_id,)).fetchone()
-    db_counter = db_counter + 1
     connection.close()
-    db_counter = db_counter - 1
     return post
 
 # Function to get a post title using its ID
@@ -34,9 +36,7 @@ def get_post_title(post_id):
     connection = get_db_connection_cur()
     post = connection.execute('SELECT title FROM posts WHERE id = ?',
                         (post_id,)).fetchone()
-    db_counter = db_counter + 1
     connection.close()
-    db_counter = db_counter - 1
     return post
 
 
@@ -44,11 +44,9 @@ def get_post_title(post_id):
 def get_total_posts():
     global db_counter
     connection = get_db_connection()
-    db_counter = db_counter + 1
     post = connection.execute('SELECT * FROM posts').fetchall()
     post =  len(post)
     connection.close()
-    db_counter = db_counter - 1
     return post
 
 
@@ -61,10 +59,8 @@ app.config['SECRET_KEY'] = 'your secret key'
 def index():
     global db_counter
     connection = get_db_connection()
-    db_counter = db_counter + 1
     posts = connection.execute('SELECT * FROM posts').fetchall()
     connection.close()
-    db_counter = db_counter - 1
     return render_template('index.html', posts=posts)
 
 # Define how each individual article is rendered 
@@ -82,7 +78,7 @@ def post(post_id):
 # Define the About Us page
 @app.route('/about')
 def about():
-    app.logger.info(f'Page "about" retrieved!')
+    app.logger.info('Page "about" retrieved!')
     return render_template('about.html')
 
 
@@ -128,13 +124,11 @@ def create():
             flash('Title is required!')
         else:
             connection = get_db_connection()
-            db_counter = db_counter + 1
             connection.execute('INSERT INTO posts (title, content) VALUES (?, ?)',
                          (title, content))
             connection.commit()
             connection.close()
             app.logger.info(f'article is created "{title}"')
-            db_counter = db_counter - 1
 
             return redirect(url_for('index'))
 
@@ -146,4 +140,4 @@ if __name__ == "__main__":
     ## stream logs to app.log file
     logging.basicConfig(filename='app.log',level=logging.DEBUG)
 
-    app.run(host='0.0.0.0', port='3111')
+    app.run(host='0.0.0.0', port='3111', debug=True)
