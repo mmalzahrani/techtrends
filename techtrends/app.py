@@ -1,4 +1,4 @@
-import sqlite3, logging
+import sqlite3, logging, sys
 
 from flask import Flask, jsonify, json, render_template, request, url_for, redirect, flash
 from werkzeug.exceptions import abort
@@ -54,7 +54,7 @@ def get_total_posts():
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your secret key'
 
-# Define the main route of the web application 
+# Define the main route of the web application
 @app.route('/')
 def index():
     global db_counter
@@ -63,7 +63,7 @@ def index():
     connection.close()
     return render_template('index.html', posts=posts)
 
-# Define how each individual article is rendered 
+# Define how each individual article is rendered
 # If the post ID is not found a 404 page is shown
 @app.route('/<int:post_id>')
 def post(post_id):
@@ -95,7 +95,7 @@ def healthcheck():
     app.logger.info('Status request successfull')
     return response
 
-# Define the metrics response    
+# Define the metrics response
 @app.route('/metrics')
 def metrics():
     # Define a varible, Call get_total_posts
@@ -112,7 +112,7 @@ def metrics():
 
 
 
-# Define the post creation functionality 
+# Define the post creation functionality
 @app.route('/create', methods=('GET', 'POST'))
 def create():
     global db_counter
@@ -137,7 +137,15 @@ def create():
 # start the application on port 3111
 if __name__ == "__main__":
 
+    #s set logger to handle STDOUT and STDERR
+    stdout_handler = logging.StreamHandler(sys.stdout)
+    stderr_handler = logging.StreamHandler(sys.stderr)
+    handlers = [stdout_handler, stderr_handler]
+
+    # format output
+    format_output = '%(name)s - %(levelname)s - %(message)s'
+
     ## stream logs to app.log file
-    logging.basicConfig(filename='app.log',level=logging.DEBUG)
+    logging.basicConfig(format=format_output, level=logging.DEBUG, handlers=handlers)
 
     app.run(host='0.0.0.0', port='3111', debug=True)
